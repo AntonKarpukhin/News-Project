@@ -6,8 +6,8 @@ const NewsServices = () => {
 	const {loading, error, request, clearError, opened} = useHttp();
 
 	const _apiBase = 'https://newsapi.org/v2/top-headlines?'
-	const _apiKey = '4ea227669cb64ee7aa6529eed0563f2e';
-	// const _apiKey = 'd951f8ab8c794a349f297acfcd4cf7c5';
+	// const _apiKey = '4ea227669cb64ee7aa6529eed0563f2e';
+	const _apiKey = 'd951f8ab8c794a349f297acfcd4cf7c5';
 	const _baseOffset = 1;
 
 	const getSlide = async (country: string, id: number) => {
