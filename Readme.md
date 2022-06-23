@@ -1,1 +1,1 @@
-Новостной портал. 
+News portal website
