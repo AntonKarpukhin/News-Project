@@ -1,0 +1,23 @@
+.footer {
+    height: 83px;
+    background: #DDF0A7;
+    color: #162E3C;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        font-size: 50px;
+    }
+}

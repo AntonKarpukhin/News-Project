@@ -1,0 +1,154 @@
+.list {
+  min-height: 720px;
+  padding: 40px 10px;
+}
+.list__wrapper {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 265px);
+  grid-template-rows: auto;
+  gap: 30px 30px;
+}
+.list__item {
+  border: 1px solid #DDF0A7;
+  border-radius: 32px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 55px 210px;
+  row-gap: 10px;
+  grid-template-rows: 180px 180px 60px;
+  grid-template-areas: "img img" "title title " "button button";
+}
+.list__img {
+  grid-area: img;
+  width: 263px;
+  height: 100%;
+  object-fit: fill;
+  border-start-end-radius: 32px;
+  border-start-start-radius: 32px;
+}
+.list__title {
+  grid-area: title;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #DDF0A7;
+}
+.list__button-next {
+  grid-area: button;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 30px;
+  width: 120px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  background: #DDF0A7;
+  border-radius: 16px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.6s all;
+  color: #162E3C;
+}
+.list__button-next:hover {
+  opacity: 1;
+  background-color: #162E3C;
+  color: #DDF0A7;
+  border-color: #DDF0A7;
+}
+.list__button-down {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 50px;
+  width: 190px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  background: #DDF0A7;
+  border-radius: 16px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.6s all;
+  color: #162E3C;
+}
+.list__button-down:hover {
+  opacity: 1;
+  background-color: #162E3C;
+  color: #DDF0A7;
+  border-color: #DDF0A7;
+}
+.list__button-down:disabled {
+  display: none;
+}
+
+h2 {
+  margin: 10px 0 0 10px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 50px;
+  color: #DDF0A7;
+}
+
+@media (max-width: 768px) {
+  .list__wrapper {
+    grid-template-columns: repeat(2, 530px);
+    justify-content: center;
+  }
+  .list__item {
+    grid-template-columns: 530px;
+    grid-template-rows: 400px;
+    grid-template-areas: "img" "title" "button";
+  }
+  .list__img {
+    width: 100%;
+  }
+  .list__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .list__button-next {
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .list__wrapper {
+    grid-template-columns: repeat(1, 1060px);
+    justify-content: center;
+  }
+  .list__item {
+    grid-template-columns: 1060px;
+    grid-template-rows: 800px;
+    grid-template-areas: "img" "title" "button";
+  }
+  .list__img {
+    width: 100%;
+  }
+  .list__title {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .list__button-next {
+    height: 60px;
+    width: 250px;
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+  .list__button-down {
+    height: 70px;
+    width: 300px;
+    font-size: 50px;
+  }
+
+  h2 {
+    margin: 10px 0 50px 10px;
+    font-size: 60px;
+  }
+}
+
+/*# sourceMappingURL=NewsList.css.map */
